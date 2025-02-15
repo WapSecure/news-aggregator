@@ -44,3 +44,32 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# News Aggregator Frontend
+
+This is a React-based frontend for the News Aggregator application.
+
+## Running the Application with Docker
+
+1. **Build the Docker Image**:
+   ```bash
+   docker build -t news-aggregator-frontend .
+
+2. Run the Docker Container:
+   
+   docker run -p 3000:80 news-aggregator-frontend
+
+3. Access the Application:
+Open your browser and navigate to http://localhost:3000
+
+Development
+
+Install dependencies: yarn install
+Start the development server: yarn start
+Access the application at http://localhost:3000.
+
+Note: you need an API key for the three services used: 
+1. newsAPI : https://newsapi.org/
+2. Guardian API: https://open-platform.theguardian.com/
+3. NY times API: https://developer.nytimes.com/
